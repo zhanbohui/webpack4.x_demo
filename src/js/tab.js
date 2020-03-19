@@ -25,7 +25,7 @@ Tab.prototype.init = function () {
   this.tabHdContent.eq(this.options.now).css('display', 'block')
   this.tabHdCon.on(this.options.tabEvent, function () {
     if (_this.options.tabEvent === 'mouseover' && (!isNaN(_this.options.delay))) { // 延迟切换
-      var This = this
+      const This = this
       _this.timer = setTimeout(function () {
         _this.change(This)
       }, _this.options.delay)

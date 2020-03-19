@@ -39,15 +39,15 @@ const webpackConfigProd = {
     }),
     // 上线压缩 去除console等信息webpack4.x之后去除了webpack.optimize.UglifyJsPlugin
     // https://github.com/mishoo/UglifyJS2/tree/harmony#compress-options
-    new UglifyJSPlugin({
-      uglifyOptions: {
-        compress: {
-          warnings: false,
-          drop_debugger: false,
-          drop_console: true
-        }
-      }
-    })
+    // new UglifyJSPlugin({
+    //   uglifyOptions: {
+    //     compress: {
+    //       warnings: false,
+    //       drop_debugger: false,
+    //       drop_console: true
+    //     }
+    //   }
+    // })
   ],
   module: {
     rules: []

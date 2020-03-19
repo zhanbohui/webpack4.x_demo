@@ -2,7 +2,8 @@ module.exports = {
   root: true,
   extends: "standard",
   plugins: [
-    "html"
+    "html",
+    "prettier"
   ],
   parser: "babel-eslint",
   parserOptions: {
